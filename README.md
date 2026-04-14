@@ -175,7 +175,7 @@
 │                                                         │
 │   format_health_advice()                                │
 │   Converts Gemini markdown → clean HTML                 │
-│   (h1/h2/h3, ul, ol, p, strong)                        │
+│   (h1/h2/h3, ul, ol, p, strong)                         │
 └──────────────────────┬──────────────────────────────────┘
                        │  Python function call
                        ▼
@@ -183,18 +183,18 @@
 │                   health.py (AI Layer)                  │
 │                                                         │
 │   get_health_advice(user_message)                       │
-│   ┌─────────────────────────────────────────────────┐  │
-│   │  System Prompt (Health Coach persona)           │  │
-│   │  + User Message                                 │  │
-│   │        ↓                                        │  │
-│   │  genai.GenerativeModel("gemini-2.5-flash")      │  │
-│   │  model.start_chat(history=[])                   │  │
-│   │  chat.send_message(full_prompt,                 │  │
-│   │    temperature=0.8, top_p=0.95,                 │  │
-│   │    max_output_tokens=8192)                      │  │
-│   │        ↓                                        │  │
-│   │  response.text  ←── Gemini API Response         │  │
-│   └─────────────────────────────────────────────────┘  │
+│   ┌─────────────────────────────────────────────────┐   │
+│   │  System Prompt (Health Coach persona)           │   │
+│   │  + User Message                                 │   │
+│   │        ↓                                        │   │
+│   │  genai.GenerativeModel("gemini-2.5-flash")      │   │
+│   │  model.start_chat(history=[])                   │   │
+│   │  chat.send_message(full_prompt,                 │   │
+│   │    temperature=0.8, top_p=0.95,                 │   │
+│   │    max_output_tokens=8192)                      │   │
+│   │        ↓                                        │   │
+│   │  response.text  ←── Gemini API Response         │   │
+│   └─────────────────────────────────────────────────┘   │
 └──────────────────────┬──────────────────────────────────┘
                        │  HTTPS API Call
                        ▼
