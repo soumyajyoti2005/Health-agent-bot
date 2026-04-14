@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Coach AI - Your Personal Wellness Assistant</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <!-- Animated Robot (positioned absolutely) -->
+    <div class="robot-container">
+        <div class="glow"></div>
+        <div class="robot">
+            <!-- Robot Head -->
+            <div class="robot-head">
+                <div class="antenna"></div>
+                <div class="eyes">
+                    <div class="eye">
+                        <div class="pupil"></div>
+                    </div>
+                    <div class="eye">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+
+            <!-- Robot Body -->
+            <div class="robot-body">
+                <div class="heart-monitor">
+                    <div class="heartbeat"></div>
+                </div>
+            </div>
+
+            <!-- Arms -->
+            <div class="arm arm-left"></div>
+            <div class="arm arm-right"></div>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-content">
+                <div class="bot-avatar">🏥</div>
+                <div class="header-text">
+                    <h1>Health Coach AI</h1>
+                    <p class="status">Online • Ready to help</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hello! I'm your personal Health Coach AI. 👋</p>
+                    <p>I can help you with:</p>
+                    <ul>
+                        <li>💪 Fitness and exercise advice</li>
+                        <li>🥗 Nutrition and diet guidance</li>
+                        <li>😴 Sleep optimization tips</li>
+                        <li>🎯 Personalized health recommendations</li>
+                        <li>📊 BMI calculations and analysis</li>
+                    </ul>
+                    <p>Feel free to ask me anything about your health, nutrition, sleep patterns, or fitness goals!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <div class="message-avatar">🤖</div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input-container">
+            <form id="chatForm" class="chat-input-form">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="Ask me about your health, nutrition, sleep, or fitness..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="send-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/scripts/chat.js"></script>
+</body>
+</html>
