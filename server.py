@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from waitress import serve
 from health import get_health_advice
 import re
+import os
 
 app = Flask(__name__)
 
@@ -152,4 +153,4 @@ if __name__ == "__main__":
     print("💬 Chat interface ready!")
     print("⚡ Press Ctrl+C to stop the server")
     print("=" * 60)
-    serve(app, host="0.0.0.0", port=5000)
+    serve(app, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
