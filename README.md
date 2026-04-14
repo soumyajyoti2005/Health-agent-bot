@@ -416,6 +416,5 @@ Built with ❤️ by [soumyajyoti2005](https://github.com/soumyajyoti2005)
 
 ⭐ **Star this repo if you found it helpful!** ⭐
 
-[Flask](https://flask.palletsprojects.com) · [Google Gemini](https://aistudio.google.com) · [Render](https://render.com)
-
+[Flask](https://flask.palletsprojects.com) · [Google Gemini](https://aistudio.google.com) 
 </div>
